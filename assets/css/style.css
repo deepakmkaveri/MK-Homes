@@ -1350,7 +1350,7 @@ ul.social-box li a:hover {
 .slider-area.one .slider-title h1::before {
     position: absolute;
     content: "";
-    top: -50%;
+    top: -47%;
     left: 2px;
     height: 78px;
     width: 1px;
