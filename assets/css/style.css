@@ -105,7 +105,7 @@ Tags:       architect, architecture, architecture design, architecture portfolio
 }
 
 .hendre_nav_manu.two {
-    background: #fff!important;
+    background: #101010!important;
 }
 
 .hendre_nav_manu.three {
@@ -273,12 +273,12 @@ Tags:       architect, architecture, architecture design, architecture portfolio
 }
 
 .sticky .hendre_nav_manu.two {
-    background: #fff!important;
+    background: #101010!important;
 }
 
 
 .hendre_nav_manu.two .hendre_menu>ul>li>a {
-    color: #101010;
+    color: #ffffff;
 }
 
 .header-button.two a {
