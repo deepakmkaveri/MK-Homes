@@ -1270,6 +1270,7 @@ ul.social-box li a:hover {
     background: #EEEEEE;
      opacity: 1;
 }
+
 .slider-area.one .single-slider-left {
     transition: .5s;
     position: relative;
@@ -1369,6 +1370,10 @@ ul.social-box li a:hover {
     z-index: -1;
 }
 
+.para-highlight {
+    color: #D9AB7A;
+    font-weight: 600; /* optional for emphasis */
+}
 .slider-area.one .slider-number h1 {
     font-size: 100px;
     line-height: 58px;
