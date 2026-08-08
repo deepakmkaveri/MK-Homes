@@ -1348,7 +1348,7 @@ ul.social-box li a:hover {
     z-index: 1;
 }
 
-.slider-area.one .slider-title h1::before {
+/* .slider-area.one .slider-title h1::before {
     position: absolute;
     content: "";
     top: -47%;
@@ -1357,7 +1357,7 @@ ul.social-box li a:hover {
     width: 1px;
     background: #fff;
     opacity: 0.3;
-}
+} */
 
 .slider-area.one .slider-title h1 span{
     color: #D9AB7A;
@@ -2508,7 +2508,13 @@ ul.social-box li a:hover {
     position: relative;
     z-index: 1;
     text-align: center;
-    top: -55px;
+    top: -25px;
+}
+
+.Arch_class {
+    position: relative;
+    left: 8%;
+    color: white !important;
 }
 
 .about-area.one .about-button::before {
