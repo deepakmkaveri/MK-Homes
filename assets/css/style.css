@@ -285,7 +285,7 @@ Tags:       architect, architecture, architecture design, architecture portfolio
     display: inline-block;
     font-size: 15px;
     line-height: 30px;
-    color: #101010;
+    color: #fff;
     font-weight: 500;
     transition: .5s;
     position: relative;
@@ -792,7 +792,7 @@ ul.sub-menu li:hover a span{
 .nav-btn.navSidebar-button.style_two i {
     display: inline-block;
     font-size: 25px;
-    color: #333;
+    color: #fff;
 }
 
 .nav-btn.navSidebar-button a i {
@@ -1171,12 +1171,12 @@ ul.social-box li a:hover {
 }
 
 .section-title.upper .main-title h1 {
-    color: #101010;
+    color: rgb(255,255,255);
     opacity: 0.051;
 }
 
 .section-title.upper .sub-title h2 {
-    color: #101010;
+    color: #ffffff;
 }
 
 .section_title .sub_title h4 {
@@ -2288,7 +2288,7 @@ ul.social-box li a:hover {
 }
 
 .feature-area.one.upper {
-    background: #fff;
+    background: #101010;
 }
 
 .feature-area.one.upper .feature-content h4 {
@@ -2296,7 +2296,7 @@ ul.social-box li a:hover {
 }
 
 .feature-area.one.upper .feature-content h3 {
-    color: #101010;
+    color: #fff;
 }
 
 .feature-area.one.upper .feature-content h4::after {
@@ -2456,12 +2456,14 @@ ul.social-box li a:hover {
     position: absolute;
     content: "";
     left: 0;
-    top: 0;
+    right:0;
+    top: -50px;
     height: 100%;
     width: 100%;
-    background: url(../images/about/about-border.png);
+    background: url(../images/about/service-bor.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 auto 0;
     background-position: center center;
 }
 .about-area.one.upper::before {
@@ -2695,7 +2697,7 @@ ul.social-box li a:hover {
     line-height: 28px;
     color: #999999;
     font-weight: 400;
-    margin: 0 0 33px;
+    margin: 0 0 13px;
 }
 
 .tab-thumb {
@@ -4174,8 +4176,8 @@ span.fill {
 <!-- ============================================================== -->*/
 
 .service-area-inner-page {
-    background: #F8F8F8;
-    padding: 120px 0 90px;
+    background: #101010;
+    padding: 50px 0 0 0;
 }
 
 .service-area-inner-page .row.mg-tp {
@@ -4231,7 +4233,7 @@ span.fill {
     z-index: 1;
     transition: .5s;
 }
-
+/* 
 .service-area-inner-page .inner-service-title h3::before {
     position: absolute;
     content: "";
@@ -4241,7 +4243,7 @@ span.fill {
     width: 2px;
     background: #E0E0E0;
     transition: .5s;
-}
+} */
 
 .service-area-inner-page .inner-service-title p {
     font-size: 15px;
@@ -4551,7 +4553,7 @@ span.fill {
 <!-- ============================================================== -->*/
 
 .arcke-agency-area {
-    background: url(../images/resource/agency.jpg);
+    background: url(../images/resource/agency.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4570,7 +4572,7 @@ span.fill {
 }
 
 .arcke-agency-area .arcke-agency h2 span {
-    color: #D9AB7A;
+    color: #eeeae7;
 }
 
 .arcke-agency-area .arcke-agency-button {
@@ -4581,9 +4583,9 @@ span.fill {
 
 .arcke-agency-area .arcke-agency-button a {
     display: inline-block;
-    font-size: 15px;
+    font-size: 20px;
     padding: 12px 42px;
-    margin: 32px 0 0 -75px;
+    margin: 12px 0 0 -75px;
     background: transparent;
     color: #fff;
     font-weight: 400;
@@ -11857,14 +11859,14 @@ button.btns:hover::before{
     text-align: center;
     font-size: 15px;
     cursor: pointer;
-    color: #101010;
+    color: #fff;
     margin-top: 0px;
     margin-left: 3px;
     font-weight: 600;
 }
 
 .sticky .search-box-btn.search-box-outer.style_two i {
-    color: #101010;
+    color: #fff;
 }
 
 .header-icon.home-three .search-box-btn.search-box-outer i {
@@ -12322,9 +12324,549 @@ button.btns:hover::before{
     background: #D7AB79; 
 }
 
+/* ==================================================
+   MK HOMES — SERVICES SECTION
+   Fully namespaced to avoid existing CSS conflicts
+   ================================================== */
+
+#mk-services {
+    --mk-services-black: #101010;
+    --mk-services-black-soft: #171717;
+    --mk-services-beige: rgb(215, 171, 124);
+    --mk-services-beige-dim: rgba(215, 171, 124, 0.55);
+    --mk-services-white: rgb(255, 255, 255);
+    --mk-services-line: rgba(215, 171, 124, 0.22);
+
+    width: 100%;
+    padding: 0.1px;
+    background: var(--mk-services-black);
+    color: var(--mk-services-white);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+    box-sizing: border-box;
+}
 
 
+/* --------------------------------------------------
+   Reset only inside MK Services
+   -------------------------------------------------- */
 
+#mk-services *,
+#mk-services *::before,
+#mk-services *::after {
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------------------
+   Container
+   -------------------------------------------------- */
+
+#mk-services .mk-services-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --------------------------------------------------
+   Section Header
+   -------------------------------------------------- */
+
+#mk-services .mk-services-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mk-services .mk-services-label {
+    margin: 0 0 14px;
+
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+
+    color: var(--mk-services-beige);
+}
+
+#mk-services .mk-services-heading {
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 400;
+
+    color: var(--mk-services-white);
+}
+
+#mk-services .mk-services-heading span {
+    color: var(--mk-services-beige);
+    font-weight: 700;
+}
+
+#mk-services .mk-services-description {
+    max-width: 640px;
+    margin: 18px auto 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* --------------------------------------------------
+   Services Grid
+   -------------------------------------------------- */
+
+#mk-services .mk-services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+
+/* --------------------------------------------------
+   Service Card
+   -------------------------------------------------- */
+
+#mk-services .mk-service-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 34px 30px 30px;
+
+    background: var(--mk-services-black-soft);
+
+    border: 1px solid var(--mk-services-line);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* Left hover line */
+
+#mk-services .mk-service-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: var(--mk-services-beige);
+
+    transform: scaleY(0);
+    transform-origin: top;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* Hover */
+
+#mk-services .mk-service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--mk-services-beige-dim);
+
+    background: #131313;
+}
+
+#mk-services .mk-service-card:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* --------------------------------------------------
+   Icon
+   -------------------------------------------------- */
+
+#mk-services .mk-service-icon {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border: 1px solid var(--mk-services-line);
+
+    color: var(--mk-services-beige);
+}
+
+#mk-services .mk-service-icon svg {
+    width: 26px;
+    height: 26px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+
+/* --------------------------------------------------
+   Service Content
+   -------------------------------------------------- */
+
+#mk-services .mk-service-content {
+    width: 100%;
+}
+
+#mk-services .mk-service-content h3 {
+    margin: 0 0 10px;
+
+    font-size: 19px;
+    line-height: 1.3;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: var(--mk-services-white);
+}
+
+#mk-services .mk-service-content p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.65;
+
+    color: rgba(255, 255, 255, 0.58);
+}
+
+
+/* --------------------------------------------------
+   Service List
+   -------------------------------------------------- */
+
+#mk-services .mk-service-content ul {
+    list-style: none;
+
+    margin: 18px 0 0;
+    padding: 0;
+}
+
+#mk-services .mk-service-content li {
+    position: relative;
+
+    margin: 0;
+    padding: 0 0 0 16px;
+
+    font-size: 13px;
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+#mk-services .mk-service-content li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 11px;
+
+    width: 6px;
+    height: 1px;
+
+    background: var(--mk-services-beige);
+}
+
+
+/* --------------------------------------------------
+   Button
+   -------------------------------------------------- */
+
+#mk-services .mk-service-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: auto;
+    padding: 10px 22px;
+
+    border: 1px solid var(--mk-services-beige-dim);
+
+    color: var(--mk-services-beige);
+
+    text-decoration: none;
+
+    font-size: 12px;
+    line-height: 1.2;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+#mk-services .mk-service-button:hover {
+    background: var(--mk-services-beige);
+    color: var(--mk-services-black);
+}
+
+
+/* --------------------------------------------------
+   Service Number
+   -------------------------------------------------- */
+
+#mk-services .mk-service-number {
+    position: absolute;
+
+    top: 10px;
+    right: 18px;
+
+    pointer-events: none;
+    user-select: none;
+
+    font-size: 64px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: var(--mk-services-beige);
+
+    opacity: 0.14;
+}
+
+
+/* --------------------------------------------------
+   Closing Strip
+   -------------------------------------------------- */
+
+#mk-services .mk-services-strip {
+    margin-top: 60px;
+
+    padding: 34px 30px;
+
+    text-align: center;
+
+    border: 1px solid var(--mk-services-line);
+}
+
+#mk-services .mk-services-strip p {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.5;
+
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#mk-services .mk-services-strip span {
+    color: var(--mk-services-beige);
+}
+
+
+/* --------------------------------------------------
+   Tablet
+   -------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    #mk-services {
+        padding: 80px 0;
+    }
+
+    #mk-services .mk-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #mk-services .mk-services-heading {
+        font-size: 32px;
+    }
+}
+
+
+/* --------------------------------------------------
+   Mobile
+   -------------------------------------------------- */
+
+@media (max-width: 575px) {
+
+    #mk-services {
+        padding: 60px 0;
+    }
+
+    #mk-services .mk-services-container {
+        padding: 0 15px;
+    }
+
+    #mk-services .mk-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #mk-services .mk-services-heading {
+        font-size: 28px;
+    }
+
+    #mk-services .mk-services-description {
+        font-size: 14px;
+    }
+
+    #mk-services .mk-service-card {
+        padding: 30px 24px 26px;
+    }
+
+    #mk-services .mk-services-strip {
+        padding: 25px 20px;
+    }
+
+    #mk-services .mk-services-strip p {
+        font-size: 15px;
+    }
+}
+
+
+/* --------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    #mk-services *,
+    #mk-services *::before,
+    #mk-services *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   ARCKEN AGENCY - BLACK & BEIGE BANNER
+   ========================================================= */
+
+.arcke-agency-area {
+  position: relative;
+  width: 100%;
+  min-height: 414px;
+  background-image: url('../images/resource/agency.png'); 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* Typography & Heading Styling */
+.arcke-agency h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #1A1A1A; /* Dark charcoal/black tone */
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.arcke-agency h2 span {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #B59363; /* Accent warm beige / subtle gold */
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+
+/* Matte Minimalist Button Container */
+.arcke-agency-button {
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Matte Minimalist Button Styling */
+.arcke-agency-button a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #161616; /* Deep matte black */
+  color: #F4EFEA; /* Soft cream text */
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 0px; /* Sharp minimalist edges */
+  border: 1px solid #161616;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Pampas SVG Icon inside button */
+.arcke-agency-button a .btn-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #C5A880; /* Beige accent stroke */
+  transition: transform 0.35s ease, stroke 0.35s ease;
+}
+
+/* Subtle Interactive Hover State */
+.arcke-agency-button a:hover {
+  background-color: #F4EFEA; /* Light beige/cream on hover */
+  color: #161616; /* Black text */
+  border-color: #161616;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.arcke-agency-button a:hover .btn-icon {
+  stroke: #161616;
+  transform: rotate(12deg) scale(1.1);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .arcke-agency-area {
+    min-height: auto;
+    padding: 50px 15px;
+  }
+  
+  .arcke-agency h2 {
+    font-size: 30px;
+  }
+  
+  .arcke-agency-button a {
+    padding: 14px 32px;
+    font-size: 18px;
+  }
+}
 
 
 
