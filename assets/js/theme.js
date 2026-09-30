@@ -392,6 +392,38 @@
 
 
 
+    $('.youtube-video-carousel').each(function () {
+        var videoCarousel = $(this);
+        var videoCount = videoCarousel.children().length;
+
+        if (!videoCount) {
+            return;
+        }
+
+        videoCarousel.owlCarousel({
+            loop: videoCount > 1,
+            margin: 24,
+            autoplay: false,
+            smartSpeed: 700,
+            dots: false,
+            nav: true,
+            navElement: 'button',
+            navText: ["<span class='sr-only'>Previous video</span><i class='bi bi-arrow-left' aria-hidden='true'></i>", "<span class='sr-only'>Next video</span><i class='bi bi-arrow-right' aria-hidden='true'></i>"],
+            responsive: {
+                0: {
+                    items: Math.min(videoCount, 1)
+                },
+                768: {
+                    items: Math.min(videoCount, 2)
+                },
+                1000: {
+                    items: Math.min(videoCount, 4)
+                }
+            }
+        });
+    });
+
+
 // service Active
     $('.brand_list').owlCarousel({
         loop: true,
