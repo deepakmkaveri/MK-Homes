@@ -1496,6 +1496,49 @@ ul.social-box li a:hover {
     border: 1px solid #D7AB79;
 }
 
+.hero-slides .slider-area.one {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: transparent;
+    min-height: 70vh;
+    min-height: 70svh;
+}
+
+.hero-slides .hero-background-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-slides .slider-area.one > .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-slides .slider-area.one .row.bor-der {
+    border: 0;
+}
+
+.hero-slides .slider-area.one .row.bor-der::before,
+.hero-slides .slider-area.one .single-slider-left::before,
+.hero-slides .slider-area.one .single-slider-left::after,
+.hero-slides .slider-area.one .single-slider::before,
+.hero-slides .slider-area.one .single-slider::after {
+    display: none;
+}
+
+.hero-slides .slider-area.one .single-slider {
+    background: transparent;
+}
+
+.hero-slides .slider-area.one .single-slider-left {
+    margin-top: 0;
+}
+
 .slider-area.one.upper {
     background: #fff;
 }
